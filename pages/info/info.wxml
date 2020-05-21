@@ -1,0 +1,9 @@
+<view>
+	<van-cell-group>
+		<van-field value="{{ bankName }}" label="银行名称" placeholder="请输入银行名称" bind:change="onChangeBankName"/>
+		<van-field value="{{ bankAddress }}" label="机构名称" placeholder="请输入所在支行名称" bind:change="onChangeBankAddress"/>
+	</van-cell-group>
+	<view class="content">
+		<van-button type="info" size="small" bindtap="submit"> <view style="width:200px;">确认</view></van-button>
+	</view>
+</view>

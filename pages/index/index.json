@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-button": "../../loins/button/index",
+    "van-nav-bar": "../../loins/nav-bar/index",
+    "van-icon": "../../loins/icon/index",
+    "van-cell": "../../loins//cell/index",
+    "van-cell-group": "../../loins/cell-group/index",
+    "van-tab": "../../loins/tab/index",
+    "van-tabs": "../../loins/tabs/index",
+    "van-field": "../../loins/field/index",
+    "van-image": "../../loins/image/index"
+  }
+}

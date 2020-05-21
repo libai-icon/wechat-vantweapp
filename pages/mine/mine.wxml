@@ -1,0 +1,20 @@
+<view style="width:100">
+	<van-cell title="个人信息" bindtap="newInfo" is-link value="维护个人信息" >
+		<!-- <van-icon name="plus" size="18" /> -->
+		<!-- <view>维护个人信息</view> -->
+	</van-cell>
+	<view class="content" wx:if="{{bankName == null || bankName == '' }}" >
+		<view class="conDetail">
+			暂无数据
+		</view>
+		
+	</view>
+	<view wx:else >
+			<van-cell title="银行名称" >
+				{{bankName}}
+			</van-cell>
+			<van-cell title="所在支行名称" >
+				{{bankAddress}}
+			</van-cell>
+		</view>
+</view>

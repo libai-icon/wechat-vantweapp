@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view>
+	<!-- <view class="userinfo">
+		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+		<block wx:else>
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+		</block>
+		<van-button type="default">默认按钮</van-button>
+		<van-button type="primary">主要按钮</van-button>
+		<van-button type="info">信息按钮</van-button>
+		<van-button type="warning">警告按钮</van-button>
+		<van-button type="danger">危险按钮</van-button>
+	</view>
+	<view class="usermotto">
+		<text class="user-motto">{{motto}}</text>
+	</view> -->
+	<van-cell-group>
+		<van-field value="{{ companyCode }}"  label="企业信用代码" placeholder="请输入企业信用代码" bind:change="onChangeCompanyCode"/>
+		<van-field value="{{ companyName }}" label="企业名称" placeholder="请输入企业名称" 
+		bind:change="onChangeCompanyName"/>
+	</van-cell-group>
+	<view class="bot">
+		<van-button type="info" size="small" bindtap="submit"> <view style="width:200px;">确认</view></van-button>
+	</view>
+	<view style="width:100%;">
+	
+		<van-cell title="扫一扫" bindtap="getScancode">
+			<van-icon name="scan" size="18"/>
+		</van-cell>
+		<van-tabs active="{{ active }}" bind:change="onChange" color="#1989fa">
+			<van-tab title="二维码 1">
+				<view class="content">
+					<view class="conDetail" wx:if="{{qr1 == null || qr1 == ''}}">
+						暂无数据
+					</view>
+					<!-- <van-image width="100" height="100" src="{{qr1}}" /> -->
+					<view wx:else  >
+					<image src="{{qr1}}" style="width:200px;height:200px;" ></image>
+					</view>
+				</view>
+			</van-tab>
+			<van-tab title="二维码 2">
+				<view class="content">
+					<view class="conDetail" wx:if="{{qr2 == null || qr2 == ''}}">
+						暂无数据
+					</view>
+						<view wx:else  >
+					<image src="{{qr2}}" style="width:200px;height:200px;" ></image>
+					</view>
+				</view>
+			</van-tab>
+		</van-tabs>
+	</view>
+</view>

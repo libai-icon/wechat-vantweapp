@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-nav-bar": "../../loins/nav-bar/index",
+    "van-icon": "../../loins/icon/index",
+    "van-cell": "../../loins//cell/index",
+    "van-cell-group": "../../loins/cell-group/index"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/info/info"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eeeeee",
+    "navigationBarTitleText": "sinorpa扫码录",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#1989fa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "扫一扫",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人信息",
+        "iconPath": "/images/mine.png",
+        "selectedIconPath": "/images/mine_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
